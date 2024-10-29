@@ -66,6 +66,19 @@ const PriceOptions = () => {
                 "Access to sauna and pool",
                 "Discount on personal training for couples"
             ]
+        },
+        {
+            "id": 5,
+            "name": "Couple Plan",
+            "price": 89.99,
+            "currency": "USD",
+            "duration": "Monthly",
+            "features": [
+                "24/7 gym access for two members",
+                "Unlimited group classes for both",
+                "Access to sauna and pool",
+                "Discount on personal training for couples"
+            ]
         }
     ]
 

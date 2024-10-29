@@ -1,6 +1,7 @@
 
+import { BarChart } from 'recharts'
 import './App.css'
-import Charts from './Components/Charts/Charts'
+import Charts from './Components/Charts/Chart'
 import NavBar from './Components/NavBar/NavBar'
 import PriceOptions from './PriceOptions/PriceOptions'
 
@@ -13,6 +14,7 @@ function App() {
     <NavBar></NavBar>
     <PriceOptions></PriceOptions>
     <Charts></Charts>
+    <BarChart></BarChart>
     </>
   )
 }
