@@ -1,30 +1,23 @@
-import { LineChart, Line, XAxis, YAxis } from 'recharts';
 
-const Charts = () => {
-    const students = [
-        { "id": 1, "student": "Alice", "mat-marks": 78, "biology-marks": 90},
-        { "id": 2, "student": "Bob", "mat-marks": 85, "biology-marks": 77 },
-        { "id": 3, "student": "Charlie", "mat-marks": 67, "biology-marks": 68 },
-        { "id": 4, "student": "David", "mat-marks": 90, "biology-marks": 84 },
-        { "id": 5, "student": "Emma", "mat-marks": 74, "biology-marks": 76 },
-        { "id": 6, "student": "Frank", "mat-marks": 88, "biology-marks": 90 },
-        { "id": 7, "student": "Grace", "mat-marks": 92, "biology-marks": 75 },
-        { "id": 8, "student": "Henry", "mat-marks": 65, "biology-marks": 96 },
-        { "id": 9, "student": "Irene", "mat-marks": 80, "biology-marks": 80 },
-        { "id": 10, "student": "Jack", "mat-marks": 76, "biology-marks": 70 }
-    ];
+import { LineChart, Line, XAxis, YAxis } from 'recharts';
+const Chart = () => {
+    const marks = [{ "name": "Alice Johnson", "id": 1, "math_marks": 85, "biology_marks": 90 },
+    { "name": "Bob Smith", "id": 2, "math_marks": 78, "biology_marks": 54 },
+    { "name": "Charlie Davis", "id": 3, "math_marks": 92, "biology_marks": 81 },
+    { "name": "Diana Evans", "id": 4, "math_marks": 43, "biology_marks": 85 },
+    { "name": "Ethan Brown", "id": 5, "math_marks": 75, "biology_marks": 55 }]
+
 
     return (
         <div className='pt-20'>
-            
-            <LineChart width={1000} height={500} data={students}>
-            <XAxis dataKey="student"></XAxis>
-            <YAxis dataKey="mat-marks"></YAxis>
-             <Line dataKey="mat-marks" stroke="green"></Line>
-             <Line dataKey="biology-marks" stroke='blue'></Line>
+            <LineChart width={1000} height={500} data={marks}>
+                <XAxis dataKey="name"></XAxis>
+                <YAxis dataKey="math_marks"></YAxis>
+                <Line dataKey="math_marks" stroke='blue'></Line>
+                <Line dataKey="biology_marks" stroke='black'></Line>
             </LineChart>
         </div>
     );
 };
 
-export default Charts;
+export default Chart;
