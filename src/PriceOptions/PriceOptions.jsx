@@ -76,7 +76,7 @@ const PriceOptions = () => {
                 {
                     price.map(p =>
                         <div key={p.id}
-                            className="bg-blue-700 rounded-lg mt-10 text-white">
+                            className="bg-blue-700 flex-col  rounded-lg mt-10 text-white">
                             <div className="flex items-end justify-center">
                                 <h1 className="text-7xl pt-4">{p.price}</h1>
                                 <p className="font-semibold">/mon</p>
@@ -84,12 +84,12 @@ const PriceOptions = () => {
                             <h2 className="flex justify-center text-3xl font-medium py-4 ">{p.name}</h2>
                             {
                                 p.features.map((ft, idx) => <ul key={idx}
-                                    className=" pl-8">
+                                    className=" pl-8 ">
                                     <li className="flex items-center gap-2 "><FaCheckCircle className="text-green-500"></FaCheckCircle>{ft}</li>
                                 </ul>)
 
                             }
-                            <button className="text-2xl font-semibold flex justify-center mt-6 mb-2 w-[80%] mx-auto rounded-lg bg-green-500 hover:bg-green-800 py-2">Buy Now</button>
+                            <button className="text-2xl font-semibold flex justify-center mt-6 mb-6 w-[80%] mx-auto rounded-lg bg-green-500 hover:bg-green-800 py-2">Buy Now</button>
 
                         </div>
                     )
